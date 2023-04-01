@@ -27,7 +27,7 @@
     justify-items: center;
     align-items: center;
 }
-.menuinferior button{
+.pedido_indisponivel{
     background-color: #CBCBCB;
     border-radius: 50px;
     margin: auto auto auto auto;
@@ -36,6 +36,20 @@
     text-align: center;
     justify-items: center;
     justify-self: center;
+}
+.finalizar_pedido{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    background: #32B72F;
+    border-radius: 50px;
 }
 .margin{
     height: 92px;
