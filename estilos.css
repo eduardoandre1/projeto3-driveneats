@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 .selecionado{
-    box-shadow: 5px rgba(0, 0, 0, 0.25);
-    background-color: #CF2B2B;
+    box-shadow: 20px rgba(0, 0, 0, 0.25);
+    border: 3px green solid;
 }
 .menusuperior{
     background-color: #CF2B2B;
@@ -54,7 +54,7 @@
     overflow-x: scroll;
 }
 .produto{
-    height: aut216px;
+    height: 216px;
     width: 172px;
     margin: 0px 6px;
     font-family: "Roboto";
@@ -62,15 +62,7 @@
     justify-content: center;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
 }
-/*.produto:hover{
-    box-shadow: #CF2B2B 20px solid;
-}
-.produto::after{
-    border-radius: 50%;
-}
-*/
 .produto img{
     width: 144px;
     height: 82px;
@@ -109,7 +101,4 @@
     line-height: 19px;    
     color: #333333;
     overflow: hidden;
-}
-.selecionado{
-    box-shadow: 5px rgba(0, 0, 0, 0.25);
 }

@@ -1,5 +1,7 @@
-function select(){
-    const click = document.querySelector(".produto");
-    click.classList.toggle(".selecionado");
-    alert("esta clicando");
-}
+function select(clicado){
+    const anterior = document.querySelector("selecionado");
+    if (anterior != null) {
+        anterior.classList.toggle("selecionado");
+    }
+    clicado.classList.add("selecionado");
+    }
