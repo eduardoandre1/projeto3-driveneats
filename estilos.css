@@ -15,6 +15,29 @@
     margin: 0px 0px;
     top:0px;
     left: 0px;
+    padding-left: 27px;
+}
+.menusuperior h1{
+    width: 248px;
+    height: 44px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+.menusuperior h2{
+    width: 226px;
+    height: 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 10px;    
 }
 .menuinferior{
     display: flex;
@@ -27,15 +50,21 @@
     justify-items: center;
     align-items: center;
 }
-.pedido_indisponivel{
-    background-color: #CBCBCB;
+.menuinferior button{
+    width: 364px;
+    height: 61px;
     border-radius: 50px;
     margin: auto auto auto auto;
+    text-align: center;
+}
+.pedido_indisponivel{
+    background-color: #CBCBCB;
     font-family: roboto;
     font-size: 20px;
     text-align: center;
     justify-items: center;
     justify-self: center;
+    color: #FFFFFF;
 }
 .finalizar_pedido{
     font-family: 'Roboto';
@@ -43,13 +72,14 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
     background: #32B72F;
     border-radius: 50px;
+    justify-items: center;
+    justify-self: center;
+    margin: auto auto auto auto;
 }
 .margin{
     height: 92px;
@@ -63,6 +93,7 @@
     padding-left: 15px;
     text-align: start;
     margin-bottom: 17px;
+    margin-top: 25px;
 }
 .itens{
     height: 218px;
