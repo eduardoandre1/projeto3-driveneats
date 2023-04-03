@@ -47,7 +47,8 @@ function enviarMensagem() {
     const pvalor = parseFloat(document.querySelector(".pratoprincipal h1").innerHTML.replace("R$ ","").replace(",","."));
     const Bvalor = parseFloat(document.querySelector(".bebida h1").innerHTML.replace("R$ ","").replace(",","."));
     const Svalor = parseFloat(document.querySelector(".sobremesa h1").innerHTML.replace("R$ ","").replace(",","."));
-    const total = (pvalor + Bvalor + Svalor).toFixed(2).replace(".",",")
+    let total = (pvalor + Bvalor + Svalor).toFixed(2).replace(".",",")
+    total = total.toString().replace(",",".")
     const mensagem =`Olá, gostaria de fazer o pedido: \n- Prato: ${pratonome}- Bebida: ${bebidanome}- Sobremesa: ${sobremesanome}Total: R$ ${total}`
     const mensagem1 =encodeURIComponent(mensagem)
     window.open(`https://wa.me/${numero}?text=${mensagem1}`)
