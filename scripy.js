@@ -33,7 +33,8 @@ function finalizar_pedido(){
     if(prato != null && bebida != null && sobremesa != null){
         botão.classList.remove("pedido_indisponivel")
         botão.classList.add("finalizar_pedido")
-        botão.innerHTML = "finalizar pedido"
+        botão.innerHTML = "Fechar pedido"
+        document.getElementById("botão").disabled = false;
     }
 }
 
