@@ -4,13 +4,9 @@ function selectprato(clicado){
     if(anterior != null ){
         anterior.classList.remove("selecionado")
         anterior.classList.remove("pratoprincipal")
-
     }
-    /*const nome = document.querySelector(".pratoprincipal h2")
-    nome.innerHTML("esta funcionando")*/
     clicado.classList.add("selecionado")
     clicado.classList.add("pratoprincipal")
-    alert(nome.innerHTML)
 
 }
 function selectbebida(clicado){
@@ -45,9 +41,20 @@ function finalizar_pedido(){
 }
 function enviarMensagem() {
     const numero = "5521970124125";
-    const mensagem = "Olá, gostaria de fazer o pedido ";
     const pratonome = document.querySelector(".pratoprincipal h2").innerHTML
     const bebidanome = document.querySelector(".bebida h2").innerHTML
     const sobremesanome = document.querySelector(".sobremesa h2").innerHTML
-    window.open("https://web.whatsapp.com/send?phone=" + numero + "&text=" + mensagem + pratonome + ", "+bebidanome +", "+ sobremesanome);
+    const pvalor = parseFloat(document.querySelector(".pratoprincipal h1").innerHTML.replace("R$ ","").replace(",","."));
+    const Bvalor = parseFloat(document.querySelector(".bebida h1").innerHTML.replace("R$ ","").replace(",","."));
+    const Svalor = parseFloat(document.querySelector(".sobremesa h1").innerHTML.replace("R$ ","").replace(",","."));
+    const total = (pvalor + Bvalor + Svalor).toFixed(2)
+    const mensagem =`Olá,gostaria de fazer o pedido\n
+    -Prato: ${pratonome}\n
+    -Bebida: ${bebidanome}\n
+    -Sobremesa: ${sobremesanome}\n
+    Total: R$ ${total}`
+    const mensagem1 =encodeURIComponent(mensagem)
+    /*window.open("https://web.whatsapp.com/send?phone=" + numero + "&text=" + mensagem + pratonome + ", "+bebidanome +", "+ sobremesanome + "valor total"+total);
+*/
+    window.open(`https://web.whatsapp.com/send?phone=${numero}&text=${mensagem1}`)
 }
