@@ -50,5 +50,5 @@ function enviarMensagem() {
     const total = (pvalor + Bvalor + Svalor).toFixed(2)
     const mensagem =`Olá, gostaria de fazer o pedido: \n- Prato: ${pratonome}- Bebida: ${bebidanome}- Sobremesa: ${sobremesanome}Total: R$ ${total}`
     const mensagem1 =encodeURIComponent(mensagem)
-    window.open(`https://web.whatsapp.com/send?phone=${numero}&text=${mensagem1}`)
+    window.open(`https://wa.me/${numero}?text=${mensagem1}`)
 }
